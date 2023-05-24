@@ -17,7 +17,7 @@ public class Enfermero {
     }
     
     public void establecerTipo(String x){
-        tipo=x;
+        tipo = x;
     }  
     
     public void establecerSalarioMensualEnf(double x){

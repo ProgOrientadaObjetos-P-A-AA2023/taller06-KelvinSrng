@@ -41,7 +41,8 @@ public class Principal {
         String n;
         String especialidad;
         String tipo;
-        double sueldoMensual;
+        double sueldoMensualM;
+        double sueldoMensualEnf;
         
         sc.nextLine();
         
@@ -53,13 +54,13 @@ public class Principal {
             especialidad = sc.nextLine();
             
             System.out.print("Ingrese el sueldo mensual del médico "+(i+1) + ": ");
-            sueldoMensual = sc.nextDouble();
+            sueldoMensualM = sc.nextDouble();
             
             sc.nextLine();
             
             System.out.print("\n");
             
-            med[i]= new Medico(n,especialidad,sueldoMensual);
+            med[i]= new Medico(n,especialidad,sueldoMensualM);
         }
         
         sc.nextLine();
@@ -72,13 +73,13 @@ public class Principal {
             tipo = sc.nextLine();
             
             System.out.print("Ingrese el sueldo mensual del enfermero "+(i+1)+": ");
-            sueldoMensual = sc.nextDouble();
+            sueldoMensualEnf = sc.nextDouble();
             
             sc.nextLine();
             
             System.out.print("\n");
             
-            enferm[i]= new Enfermero(n,tipo,sueldoMensual);
+            enferm[i]= new Enfermero(n,tipo,sueldoMensualEnf);
           
         }
         

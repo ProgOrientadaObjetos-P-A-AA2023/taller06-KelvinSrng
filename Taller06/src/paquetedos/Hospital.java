@@ -84,10 +84,10 @@ public class Hospital {
     public void calcularSueldos(Medico[] a, Enfermero[] b) {
         double s1 = 0;
         double s2 = 0;
-        for (int i=0;i<a.length;i++) {
+        for (int i=0;i < a.length;i++) {
             s1 += a[i].obtenerSalarioMensualM();
         }
-        for (int i=0;i<b.length;i++) {
+        for (int i=0;i < b.length;i++) {
             s2 += b[i].obtenerSalarioMensualEnf();
         }
         sueldoTotal = s1+s2;
